@@ -2,6 +2,7 @@ import React from 'react'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {RiMessengerLine} from 'react-icons/ri'
+import {AiFillLinkedin} from 'react-icons/ai'
 import {BsWhatsapp} from 'react-icons/bs'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
@@ -39,14 +40,14 @@ const Contact = () => {
           <BsWhatsapp className='contact__option-icon'/>
             <h4>Whatsapp</h4> 
             {/* The below does not work - update it */}
-            <a href="https://api.whatsapp.com/send?phone+447397241653" target="_blank">Send a message</a>
+            <a href="https://wa.me/447397241653" target="_blank">Send a message</a>
           </article>
 
           {/* LinkedIn */}
           <article className="contact__option">
-          <RiMessengerLine className='contact__option-icon'/>
+          <AiFillLinkedin className='contact__option-icon'/>
             <h4>LinkedIn</h4>
-            <a href="https://m.me/danielmx1" target="_blank">Connect with me</a>
+            <a href="https://www.linkedin.com/in/daniel-hughes-088477100/" target="_blank">Connect with me</a>
           </article>
         </div>
         {/* End of contact options */}

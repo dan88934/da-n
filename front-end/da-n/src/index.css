@@ -27,7 +27,10 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px; 
+  /* Added scroll-padding-top to facilitate navbar being at top of the page */
 }
+
 
 ::-webkit-scrollbar {
   display: none;
