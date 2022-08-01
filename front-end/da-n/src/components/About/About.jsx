@@ -4,7 +4,6 @@ import ME from '../../assets/CroppedGardenPhotoBW.png'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
-// import setActiveNav from '../Nav/Nav'
 
 const About = () => {
   return (

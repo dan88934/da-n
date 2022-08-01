@@ -46,6 +46,12 @@
     color: var(--color-bg);
 }
 
+.experience__details li {
+    color: var(--color-bg);
+    list-style-type:disc;
+}
+
+
 /* ========= Media Querie (Medium devices such as tablets) ======== */ 
 @media screen and (max-width: 1024px) {
    .experience__container {
