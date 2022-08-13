@@ -1,0 +1,91 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.scroll__down__container a {
+    color: var(--color-primary);
+}
+
+/* ======== CTA ======== */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* ======== Social Links ======== */
+.header__social__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__social__links a {
+    color: var(--color-primary);
+}
+
+.header__social__links::after { /* This is for the line under the social links */
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ======== ME ======== */
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem 
+}
+
+/* ======== Scroll Down ======== */
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.header__container h5 {
+    color: var(--color-primary);
+}
+
+/* ========= Media Querie (Medium devices such as tablets) ======== */ 
+@media screen and (max-width: 1024px) {
+    header {
+        height: 100vh;
+    }
+}
+    
+/* ========= Media Querie (Small devices such as tablets) ======== */ 
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header__social__links,
+    .scroll__down {
+        display: none;
+    }
+}
