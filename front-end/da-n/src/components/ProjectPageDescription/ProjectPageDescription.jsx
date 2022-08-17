@@ -27,7 +27,7 @@ const ProjectPageDescription = (data) => {
   return (
     <>
     <section id='portfolio'>
-    <h5>Short description</h5>
+    {/* <h5>Short description</h5> */}
       <h2>{title}</h2>
      
       <div className='container description__container'>
@@ -41,6 +41,7 @@ const ProjectPageDescription = (data) => {
             </div>
           </div>   
           <h3>{title}</h3>
+          <br></br>
           <div className="portfolio__item__info">
             <small><strong>Description: </strong>{description_text}</small>
             <br></br>

@@ -12,8 +12,8 @@ const courier_app =
     long_description_text3:'I completed this small project as part of a coding chalenge. This was my first experience sending a JSON based request to an API. There are frontend and backend tests included, utilizing Selenium and Unittest. These can be ran from the main directory with \'python -m unittest\'.',
     completed_date:'November 2021',
     stack_used:'Python (Flask), Javascript',
-    github: 'https://github.com/dan88934/heiki',
-    site: 'https://heiki.da-n.co'
+    github: 'https://github.com/dan88934/courier_app',
+    site: 'https://courier_app.da-n.co'
   }
 
 
