@@ -1,18 +1,20 @@
-import heiki_img1 from '../assets/Heiki1.png'
-import heiki_img2 from '../assets/Heiki2.png'
+import dan_img1 from '../assets/Dan1.png'
+import dan_img2 from '../assets/Dan2.png'
 
-const heiki = 
+const dan = 
   {id: 3, 
-    image1: heiki_img1, 
-    image2: heiki_img2, 
-    title: 'Heiki',
-    description_text:'Vocabulary list creation app',
-    long_description_text:'long - Vocabulary list creation app',
-    completed_date:'March 2021',
-    stack_used:'Python (Flask), HTML, Bootstrap',
-    github: 'https://github.com/dan88934/heiki',
-    site: 'heiki.da-n.co'
+    image1: dan_img1, 
+    image2: dan_img2, 
+    title: 'Da-n',
+    description_text:'My portfolio website',
+    long_description_text:'This portfolio website, which I created to display the projects which I have completed.',
+    long_description_text2:'I followed a Youtube tutorial to produce the CSS template, the I expanded on this by removing addding section, changing the color theme, and adding individual pages for each project.',
+    long_description_text3:'Through creating this portfolio, I expanded my knowlege of CSS and got more experience using React props.',
+    completed_date:'August 2022',
+    stack_used:'Go (Mux), Javascript (React), CSS',
+    github: 'https://github.com/dan88934/da-n',
+    site: 'https://da-n.co'
   }
 
 
-export default heiki
+export default dan

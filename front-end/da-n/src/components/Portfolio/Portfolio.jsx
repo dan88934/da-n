@@ -13,11 +13,13 @@ const data = [
   image: sakuki, 
   title: 'Sakuki',
   description_text:'Japanese business translation app',
+  details:'Japanese business translation app',
   completed_date:'July 2022',
   stack_used:'GO (Gin), Javascript (React), CSS (Styled Components)',
   //Add description here, pass it into the map and template below
   github: 'https://github.com/dan88934/sakuki',
-  site: ''
+  details_page: '/sakuki',
+  site: 'https://sakuki.da-n.co'
 },
 {id: 2, 
   image: zenmon, 
@@ -26,7 +28,8 @@ const data = [
   completed_date:'October 2021',
   stack_used:'Python (Django), Javascript (Vue), Bootstrap',
   github: 'https://github.com/dan88934/zenmon',
-  site: ''
+  details_page: '/zenmon',
+  site: 'https://zenmon.da-n.co'
 },
 {id: 3, 
   image: heiki, 
@@ -35,7 +38,8 @@ const data = [
   completed_date:'March 2021',
   stack_used:'Python (Flask), HTML, Bootstrap',
   github: 'https://github.com/dan88934/heiki',
-  site: ''
+  details_page: '/heiki',
+  site: 'https://heiki.da-n.co'
 },
 {id: 4, 
   image: dan1, 
@@ -44,7 +48,8 @@ const data = [
   completed_date:'August 2022',
   stack_used:'Go (Mux), Javascript (React), CSS',
   github: 'https://github.com/dan88934/da-n',
-  site: ''
+  details_page: '/dan',
+  site: 'https://dan.da-n.co'
 },
 {id: 5, 
   image: courier_app, 
@@ -53,7 +58,8 @@ const data = [
   completed_date:'November 2021',
   stack_used:'Python (Flask), Javascript',
   github: 'https://github.com/dan88934/courier_app',
-  site: ''
+  details_page: '/courier_app',
+  site: 'https://courier_app.da-n.co'
 },
 {id: 6, 
   image: danflix, 
@@ -62,7 +68,8 @@ const data = [
   completed_date:'October 2021',
   stack_used:'Go (Gin), Javascript (React), CSS (Styled Components)',
   github: 'https://github.com/dan88934/Danflix',
-  site: ''
+  details_page: '/danflix',
+  site: 'https://danflix.da-n.co'
 }
 ]
 
@@ -74,7 +81,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <div className='container portfolio__container'>
        {
-        data.map(({id, image, title, github, site, completed_date, stack_used, description_text}) => {
+        data.map(({id, image, title, github, site, details_page, completed_date, stack_used, description_text}) => {
           return (
             <article key={id} className='portfolio__item'>
           <div className="portfolio__item-image">
@@ -90,7 +97,7 @@ const Portfolio = () => {
           </div>
           <div className='portfolio__item-cta'>
             <a href={github} className='btn'  target="_blank">Github</a>
-            <a href="https://github.com" className='btn'  target="_blank">Details</a>
+            <a href={details_page} className='btn'  target="_blank">Details</a>
             <a href={site} className='btn btn-primary' target='_blank'>Live Site</a>
           </div>
         </article>

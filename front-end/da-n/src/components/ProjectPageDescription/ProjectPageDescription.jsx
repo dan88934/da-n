@@ -16,6 +16,8 @@ const ProjectPageDescription = (data) => {
   const title = (data.data.data.title)
   const description_text = (data.data.data.description_text)
   const long_description_text = (data.data.data.long_description_text)
+  const long_description_text2 = (data.data.data.long_description_text2)
+  const long_description_text3 = (data.data.data.long_description_text3)
   const completed_date = (data.data.data.completed_date)
   const stack_used = (data.data.data.stack_used)
   const github = (data.data.data.github)
@@ -46,7 +48,16 @@ const ProjectPageDescription = (data) => {
             <br></br>
             <small><strong>Used: </strong>{stack_used}</small>
             <br></br>
+            <br></br>
             <small>{long_description_text}</small>
+            <br></br>
+            <br></br>
+            <small>{long_description_text2}</small>
+            <br></br>
+            <br></br>
+            <small>{long_description_text3}</small>
+            <br></br>
+            <br></br>
           </div>
           <div className='portfolio__item-cta'>
             <a href={github} className='btn'  target="_blank">Github</a>
