@@ -29,7 +29,7 @@ const data = [
   stack_used:'Python (Django), Javascript (Vue), Bootstrap',
   github: 'https://github.com/dan88934/zenmon',
   details_page: '/zenmon',
-  site: 'https://zenmon.da-n.co'
+  site: 'https://zenmon.app'
 },
 {id: 3, 
   image: heiki, 
@@ -49,7 +49,7 @@ const data = [
   stack_used:'Go (Mux), Javascript (React), CSS',
   github: 'https://github.com/dan88934/da-n',
   details_page: '/dan',
-  site: 'https://dan.da-n.co'
+  site: 'https://da-n.co'
 },
 {id: 5, 
   image: courier_app, 
