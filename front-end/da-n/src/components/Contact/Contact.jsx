@@ -11,8 +11,8 @@ const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_kngafi8', 'template_iemurov', form.current, 'iujkvp77D8417LoSW')
+    console.log(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, process.env.REACT_APP_PUBLIC_KEY)
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -29,19 +29,18 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           {/* Email */}
-          <article className="contact__option">
+          {/* <article className="contact__option">
           <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
             <a href="mailto:danieltanaka2@hotmail.com" target="_blank">Send a message</a>
-          </article>
+          </article> */}
 
           {/* Whatsapp */}
-          <article className="contact__option">
+          {/* <article className="contact__option">
           <BsWhatsapp className='contact__option-icon'/>
-            <h4>Whatsapp</h4> 
-            {/* The below does not work - update it */}
+            <h4>Whatsapp</h4>  
             <a href="https://wa.me/447397241653" target="_blank">Send a message</a>
-          </article>
+          </article> */}
 
           {/* LinkedIn */}
           <article className="contact__option">
