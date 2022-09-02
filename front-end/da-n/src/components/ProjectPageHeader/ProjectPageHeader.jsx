@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderSocialLinks from '../Header/HeaderSocialLinks'
+import HeaderSocialLinks from '../Header/HeaderSocialLinks.jsx'
 
 const ProjectPageHeader = (data) => {
   const title = (data.data.data.title)

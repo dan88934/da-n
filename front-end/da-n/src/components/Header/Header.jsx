@@ -1,8 +1,8 @@
 import React from 'react'
 import './header.css'
-import CTA from './CTA'
+import CTA from './CTA.jsx'
 import ME from '../../assets/CroppedHallGardenPhotoBW-removebg.png'
-import HeaderSocialLinks from './HeaderSocialLinks'
+import HeaderSocialLinks from './HeaderSocialLinks.jsx'
 
 const Header = () => {
   return (

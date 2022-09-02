@@ -1,13 +1,5 @@
 import React from 'react'
 import './projectpagedescription.css'
-import sakuki from '../../assets/Sakuki1.png'
-import zenmon from '../../assets/Zenmon1.png'
-import heiki from '../../assets/Heiki1.png'
-import dan1 from '../../assets/Da-n1.png'
-import danflix from '../../assets/Danflix1.png'
-import courier_app from '../../assets/CourierApp1.png'
-import HeaderSocialLinks from '../Header/HeaderSocialLinks'
-
 
 const ProjectPageDescription = (data) => {
   console.log('projectpage',data)

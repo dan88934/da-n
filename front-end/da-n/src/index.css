@@ -42,6 +42,10 @@ body {
   color: var(--color-white);
   line-height: 1.7;
 }
+/* Added the below, for some reason the font is not the same on the button as on the a */
+button { 
+  font-family: 'Poppins', sans-serif;
+}
 
 /* ======= General Styles ======= */
 .container { 
@@ -101,6 +105,7 @@ a:hover {
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
+  font-size: inherit;
 }
 /* Below hover color is too white, not sure what color suits the color scheme of my site */
 /* .btn:hover {
