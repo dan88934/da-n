@@ -130,6 +130,6 @@ func main() { //Our router - send a specific route to a function
 	})
 
 	router.GET("/download-cv", DownloadCV)
-	
-	router.Run()
+
+	router.Run(":8000")
 }
