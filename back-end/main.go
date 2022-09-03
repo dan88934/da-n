@@ -23,20 +23,13 @@ func main() { //Our router - send a specific route to a function
 	router := gin.Default()
 
 	corsConfig := cors.DefaultConfig()
-	// corsConfig.AllowOrigins = []string{"http://localhost:3000"} //Allowing React dev server to send data to API
-	// corsConfig.AllowOrigins = []string{"http://localhost:8080"} //Allowing production Go server to send data to the API
 	corsConfig.AllowAllOrigins = true //Allowing this production NGINX server to send data to the API
 	corsConfig.AllowCredentials = true
 	corsConfig.AddAllowMethods("OPTIONS")
 	router.Use(cors.New(corsConfig))
 
-	// Development 
 	router.Use(static.Serve("/", static.LocalFile("../front-end/da-n/dist/", true)))
 	router.LoadHTMLGlob("../front-end/da-n/dist/index.html")
-
-	// Production (Docker) Go files are moved into the root project directory
-	// router.Use(static.Serve("/", static.LocalFile("./front-end/sakuki/dist/", true)))
-	// router.LoadHTMLGlob("./front-end/sakuki/dist/index.html")
 
 	router.GET("/", func(c *gin.Context) {
 		// Call the HTML method of the Context to render a template
@@ -137,6 +130,6 @@ func main() { //Our router - send a specific route to a function
 	})
 
 	router.GET("/download-cv", DownloadCV)
-	// router.Run("localhost:8000") // Development server
+	
 	router.Run()
 }
