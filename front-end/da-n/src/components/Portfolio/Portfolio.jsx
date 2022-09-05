@@ -19,7 +19,7 @@ const data = [
   //Add description here, pass it into the map and template below
   github: 'https://github.com/dan88934/sakuki',
   details_page: '/sakuki',
-  site: 'https://sakuki.da-n.co'
+  site: 'http://sakuki.da-n.co'
 },
 {id: 2, 
   image: zenmon, 
@@ -29,7 +29,7 @@ const data = [
   stack_used:'Python (Django), Javascript (Vue), Bootstrap',
   github: 'https://github.com/dan88934/zenmon',
   details_page: '/zenmon',
-  site: 'https://zenmon.app'
+  site: 'http://zenmon.da-n.co'
 },
 {id: 3, 
   image: heiki, 
@@ -39,7 +39,7 @@ const data = [
   stack_used:'Python (Flask), HTML, Bootstrap',
   github: 'https://github.com/dan88934/heiki',
   details_page: '/heiki',
-  site: 'https://heiki.da-n.co'
+  site: 'http://heiki.da-n.co'
 },
 {id: 4, 
   image: dan1, 
@@ -59,7 +59,7 @@ const data = [
   stack_used:'Python (Flask), Javascript',
   github: 'https://github.com/dan88934/courier_app',
   details_page: '/courier_app',
-  site: 'https://courier_app.da-n.co'
+  site: 'http://courier-app.da-n.co'
 },
 {id: 6, 
   image: danflix, 
@@ -69,7 +69,7 @@ const data = [
   stack_used:'Go (Gin), Javascript (React), CSS (Styled Components)',
   github: 'https://github.com/dan88934/Danflix',
   details_page: '/danflix',
-  site: 'https://danflix.da-n.co'
+  site: 'http://danflix.da-n.co'
 }
 ]
 
