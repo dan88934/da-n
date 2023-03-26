@@ -20,7 +20,7 @@ const Experience = () => {
               <h4>HTML</h4>
               <small>
               <ul>
-              <li>Experienced</li>
+                <li>HTML5</li>
               </ul>
               </small>
               {/* The small text here had className='text-light */}
@@ -32,7 +32,8 @@ const Experience = () => {
               <h4>CSS</h4>
               <small>
               <ul>
-              <li>Experienced</li>
+              <li>Bootstrap</li>
+              <li>Styled Components</li>
               </ul>
               </small>
             </div>
@@ -44,18 +45,8 @@ const Experience = () => {
               <small>
               <ul>
               <li>React</li>
+              <li>TypeScript</li>
               <li>Vanilla</li>
-              </ul>
-              </small>
-            </div>
-          </article>
-          <article className='experience__details'>
-            <BsPatchCheckFill className='experience__details-icon'/>
-            <div>
-              <h4>Bootstrap</h4>
-              <small>
-              <ul>
-              <li>Experienced</li>
               </ul>
               </small>
             </div>
@@ -93,27 +84,26 @@ const Experience = () => {
           <article className='experience__details'>
             <BsPatchCheckFill className='experience__details-icon'/>
             <div>
-              <h4>MySQL</h4>
+              <h4>SQL</h4>
               <small>
               <ul>
-              <li>Experienced</li>
+              <li>PostgreSQL</li>
               </ul>
               </small>
             </div>
           </article>
         </div>
       </div>
-      {/* Other Experience */}
+      {/* DevOps  */}
       <div className="experience__other">
-      <h3>Other</h3>
-        <div className="experience__content">
+      <h3>DevOps</h3>
+        <div className="long__experience__content">
           <article className='experience__details'>
             <BsPatchCheckFill className='experience__details-icon'/>
             <div>
               <h4>Docker</h4>
               <small>
               <ul>
-              <li>Experienced</li>
               <li>Most of my projects run in Docker containers</li>
               </ul>
               </small>
@@ -125,8 +115,9 @@ const Experience = () => {
               <h4>CI/CD</h4>
               <small>
               <ul>
-              <li>Experienced with Semaphore CI</li>
+              <li>Semaphore CI</li>
               <li>Set up a CI+CD pipeline for one of my projects</li>
+              <li>Selenium</li>
               </ul>
               </small>
             </div>
@@ -137,8 +128,8 @@ const Experience = () => {
               <h4>Linux</h4>
               <small>
               <ul>
-              <li>Experienced</li>
-              <li>My projects are all deployed on Ubuntu Server VPS'</li>
+              <li>My projects are all deployed on a Ubuntu Server VPS </li>
+              <li>Configured NGINX as reverse proxy</li>
               </ul>
               </small>
             </div>
@@ -149,15 +140,85 @@ const Experience = () => {
               <h4>Git</h4>
               <small>
               <ul>
-              <li>Used Github for all of my personal projects</li>
-              <li>At 1Password, used Gitlab in my role as a developer mentee</li>
+              <li>All my personal projects use Git & Github</li>
+              <li>At 1Password, used Gitlab regularly</li>
               </ul>
               </small>
             </div>
           </article>
         </div>
       </div>
+        {/* Cyber Security */}
+        <div className="experience__frontend">
+        <h3>Cyber Security</h3>
+        <div className="long__experience__content">
+          <article className='experience__details'>
+            <BsPatchCheckFill className='experience__details-icon'/>
+            <div>
+              <h4>Security+</h4>
+              <small>
+              <ul>
+              <li>Passed Security+ exam in 2023</li>
+              <li>Studied topics including:
+                  {/* <br></br>
+                  * Vulnerability management */}
+                  <br></br>
+                  * Secure coding (input validation)
+                  {/* <br></br>
+                  * Encryption and hashing */}
+                  {/* <br></br>
+                  * Digital signatures and public key infrastructure */}
+                  {/* <br></br>
+                  * Identity and access management  */}
+                  <br></br>
+                  * AWS (Security Groups, Transit Gateways)
+                  {/* <br></br>
+                  * Network and mobile security (Ports, VPNs, MDM) */}
+                  <br></br>
+                  * Incident response (MITRE, Cyber Kill Chain)
+                  <br></br>
+                  * Compliance (ISO standards, SOC audits)
+                  <br></br>
+                  * Risk Management 
+              </li>
+              </ul>
+              </small>
+              {/* The small text here had className='text-light */}
+            </div>
+          </article>
+          <article className='experience__details'>
+            <BsPatchCheckFill className='experience__details-icon'/>
+            <div>
+              <h4>zSecurity Ethical Hacking Course</h4>
+              <small>
+              <ul>
+              <li>Developed practical experience in:
 
+                <br></br>
+                * Network hacking (Packet sniffing, WPA cracking)
+                <br></br>
+                * ARP poisoning 
+                <br></br>
+                * Wireshark 
+                <br></br>
+                * Metasploit 
+                {/* <br></br>
+                * Email spoofing
+                <br></br>
+                * Remote file Inclusion */}
+                <br></br>
+                * SQL injections
+                <br></br>
+                * Cross site scripting
+              </li>
+              </ul>
+              </small>
+              {/* The small text here had className='text-light */}
+            </div>
+          </article>
+        </div>
+      </div>
+      
     </div>
     </section>
     </>

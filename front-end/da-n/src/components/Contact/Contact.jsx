@@ -28,11 +28,11 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           {/* Email */}
-          {/* <article className="contact__option">
+          <article className="contact__option">
           <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
-            <a href="mailto:danieltanaka2@hotmail.com" target="_blank">Send a message</a>
-          </article> */}
+            <a href="/download-cv" download="proposed_file_name">My email address can be found in my resume / CV</a>
+          </article>
 
           {/* Whatsapp */}
           {/* <article className="contact__option">

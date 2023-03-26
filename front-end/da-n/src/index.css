@@ -107,6 +107,18 @@ a:hover {
   transition: var(--transition);
   font-size: inherit;
 }
+
+.dark-link {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: inherit;
+}
+
 /* Below hover color is too white, not sure what color suits the color scheme of my site */
 /* .btn:hover {
   background: var(--color-white);

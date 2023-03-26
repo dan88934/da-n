@@ -7,11 +7,13 @@ import HeaderSocialLinks from './HeaderSocialLinks.jsx'
 const Header = () => {
   return (
     <header>
+      <meta name="description" content="Daniel Hughes' portfolio of software development and cyber security work"></meta>
+      <meta name="keywords" content="Daniel, Hughes, software, developer, cyber security, cybersecurity"></meta>
       <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Daniel Hughes</h1>
         {/* ClassName='color-light was applied to the h5 below */}
-        <h5>Aspiring fullstack/back-end developer</h5>
+        <h5>Developer, Hacker</h5>
         <CTA />
         <HeaderSocialLinks />
         <div className="me">

@@ -33,7 +33,14 @@ const About = () => {
         partaking in a software development mentorship at 1Password. As part of my mentorship, I have
         made changes to our codebase which are now running in production.
         </p>
-
+        <p>
+        Having a keen interest in Cyber Security, I passed the Security+ exam in 2023. My badge can be found here:&nbsp;
+        <a href='https://www.credly.com/badges/6e82d8a0-0e3d-4bce-9554-4461783b720b/public_url' className='dark-link'>CompTIA Security+ Badge.</a>
+        </p>
+        <p>
+          As someone who enjoys sharing the knowlege that I have gained, I have posted shell scripting tutorials on my blog:&nbsp; 
+          <a href='https://dan176.wordpress.com/' className='dark-link'>Dan's Tech Blog.</a>
+        </p>
         <a href='#contact' className='btn btn-primary'>Contact Me</a>
       </div>
       </div>
