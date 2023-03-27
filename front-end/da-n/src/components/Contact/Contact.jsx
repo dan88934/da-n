@@ -31,7 +31,7 @@ const Contact = () => {
           <article className="contact__option">
           <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
-            <a href="/download-cv" download="proposed_file_name">My email address can be found in my resume / CV</a>
+            <a href="mailto:readier_dragon0m@icloud.com" target="_blank">Send a message</a>
           </article>
 
           {/* Whatsapp */}
