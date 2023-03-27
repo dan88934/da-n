@@ -32,7 +32,7 @@ const CTA = () => {
           >
           Download CV
         </button> */}
-        <a href="/download-cv" download="proposed_file_name" className='btn btn-primary'>Download CV</a>
+        {/* <a href="/download-cv" download="proposed_file_name" className='btn btn-primary'>Download CV</a> */}
         <a href="#contact" className='btn btn-primary'>Let's Talk</a>
     </div>
   )
