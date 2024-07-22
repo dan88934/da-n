@@ -29,9 +29,7 @@ const RecentWorks = dynamic(
   }
 );
 const bio = `<p>
-I am Ryan Adlard, web designer from USA, California. I have rich experience in
-web site design and building and customization, also I am good at wordpress.
-I love to talk with you about our unique.
+Hey, I'm Dan! I'm a skilled Full Stack Developer and DevOps Engineer with extensive experience in building and deploying web applications using Python, Go, and JavaScript.
 </p>`;
 const IndexDark = () => {
   return (
@@ -46,7 +44,7 @@ const IndexDark = () => {
         <div className="profile no-photo">
           <div
             className="slide"
-            style={{ backgroundImage: "url(images/avatar1.jpg)" }}
+            style={{ backgroundImage: "url(images/headshot-crop3.png)" }}
           />
           <div className="title">Dan Hughes</div>
           <TypingAnimation />
