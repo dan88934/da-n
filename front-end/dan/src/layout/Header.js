@@ -27,12 +27,7 @@ const Header = ({ noSideBarBtn, menus, animationText }) => {
           <TypingAnimation data={animationText} />
         </div>
       </div>
-      {/* menu btn */}
-      {!noSideBarBtn && (
-        <a href="#" onClick={() => changeSideBar(true)} className="menu-btn">
-          <span />
-        </a>
-      )}
+     
       {/* menu */}
       <div className="top-menu menu-minimal">
         <ul>
