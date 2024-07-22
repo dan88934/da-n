@@ -1,4 +1,5 @@
 import "font-awesome/css/font-awesome.min.css";
+import '@fortawesome/fontawesome-free/css/all.min.css'; // For social icons
 import Head from "next/head";
 import State from "../src/context/state";
 import PreLoader from "../src/layout/PreLoader";

@@ -3,8 +3,8 @@ import { Fragment } from "react";
 const data = [
   {
     icon: "fa fa-code",
-    title: "Web Development",
-    desc: "Modern and mobile-ready website that will help you reach all of your marketing.",
+    title: "Fullstack Development",
+    desc: "I am experienced in creating comprehensive, tailor-made websites that meet your business requirements. My expertise spans both front-end (React JS) and back-end (Python and Go) development.",
   },
   {
     icon: "fa fa-music",

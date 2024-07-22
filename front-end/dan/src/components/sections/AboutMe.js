@@ -15,13 +15,14 @@ const AboutMe = ({ bio }) => {
         </div>
         {/* content */}
         <div className="row">
-          <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
+          {/* <div className="col col-d-6 col-t-6 col-m-12 border-line-v"> */}
+          <div className="col full-width border-line-v">
             <div
               className="text-box"
               dangerouslySetInnerHTML={{ __html: bio ? bio : bio_ }}
             ></div>
           </div>
-          <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
+          {/* <div className="col col-d-6 col-t-6 col-m-12 border-line-v">
             <div className="info-list">
               <ul>
                 <li>
@@ -38,7 +39,7 @@ const AboutMe = ({ bio }) => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="clear" />
         </div>
       </div>

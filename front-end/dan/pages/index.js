@@ -30,7 +30,7 @@ const RecentWorks = dynamic(
 );
 const bio = `<p>
 Hey, I'm Dan! I'm a skilled Full Stack Developer and DevOps Engineer with extensive experience in building and deploying web applications using Python, Go, and JavaScript.
-</p>`;
+</p><br><p>You can find detailed examples of my work in my Upwork portfolio and here on my personal website.</p>`;
 const IndexDark = () => {
   return (
     <Layout bg={"blured"}>
@@ -50,13 +50,13 @@ const IndexDark = () => {
           <TypingAnimation />
           <div className="social">
             <a target="_blank" rel="noreferrer" href="https://dribbble.com/">
-              <span className="fa fa-linkedin" style={{fontSize:'25px'}}/>
+              <span className="fa-brands fa-linkedin" style={{fontSize:'25px'}}/>
             </a>
-            {/* <a target="_blank" rel="noreferrer" href="https://twitter.com/">
-              <span className="fa fa-twitter" style={{fontSize:'25px'}}/>
-            </a> */}
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/">
+              <span className="fa-brands fa-upwork" style={{fontSize:'25px'}}/>
+            </a>
             <a target="_blank" rel="noreferrer" href="https://github.com/">
-              <span className="fa fa-github" style={{fontSize:'25px'}}/>
+              <span className="fa-brands fa-github" style={{fontSize:'25px'}}/>
             </a>
           </div>
           {/* profile buttons */}
