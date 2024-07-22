@@ -30,7 +30,7 @@ const RecentWorks = dynamic(
 );
 const bio = `<p>
 Hey, I'm Dan! I'm a skilled Full Stack Developer and DevOps Engineer with extensive experience in building and deploying web applications using Python, Go, and JavaScript.
-</p><br><p>You can find detailed examples of my work in my Upwork portfolio and here on my personal website.</p>`;
+</p><br><p>You can find examples of my work in my Upwork portfolio and here on my personal website.</p>`;
 const IndexDark = () => {
   return (
     <Layout bg={"blured"}>
@@ -49,13 +49,13 @@ const IndexDark = () => {
           <div className="title">Dan Hughes</div>
           <TypingAnimation />
           <div className="social">
-            <a target="_blank" rel="noreferrer" href="https://dribbble.com/">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/d-hughes96/">
               <span className="fa-brands fa-linkedin" style={{fontSize:'25px'}}/>
             </a>
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/">
+            <a target="_blank" rel="noreferrer" href="https://www.upwork.com/freelancers/~012aa2e9474be8a397">
               <span className="fa-brands fa-upwork" style={{fontSize:'25px'}}/>
             </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/">
+            <a target="_blank" rel="noreferrer" href="https://github.com/dan88934">
               <span className="fa-brands fa-github" style={{fontSize:'25px'}}/>
             </a>
           </div>
@@ -76,22 +76,22 @@ const IndexDark = () => {
         <About>
           <AboutMe bio={bio} />
           <Services />
-          <Pricing />
+          {/* <Pricing />
           <FunFact />
           <Clients />
-          <Quote />
+          <Quote /> */}
         </About>
-        <Resume>
+        {/* <Resume>
           <ResumeSection />
           <Skills />
           <Testimonials />
-        </Resume>
+        </Resume> */}
         <Work>
           <RecentWorks />
         </Work>
-        <Blog>
+        {/* <Blog>
           <BlogSection />
-        </Blog>
+        </Blog> */}
         <Contact>
           <ContactInfo />
           <ContactForm />

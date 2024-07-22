@@ -4,22 +4,22 @@ const data = [
   {
     icon: "fa fa-code",
     title: "Fullstack Development",
-    desc: "I am experienced in creating comprehensive, tailor-made websites that meet your business requirements. My expertise spans both front-end (React JS) and back-end (Python and Go) development.",
+    desc: "Creating comprehensive, tailor-made websites that meet your business requirements. Experienced with both front-end (React JS) and back-end (Python and Go) development.",
   },
   {
-    icon: "fa fa-music",
-    title: "Music Writing",
-    desc: "Music copying, writing, creating, transcription, arranging and composition services.",
+    icon: "fa fa-server",
+    title: "DevOps / Linux Administration ",
+    desc: "Deploying and maintaining your infrastructure using tools such as Docker, Kubernetes, and NGINX. Experienced with Linux and cloud platforms such as DigitalOcean and AWS",
   },
   {
-    icon: "fa fa-buysellads",
-    title: "Advetising",
-    desc: "Advertising services include television, radio, print, mail, and web apps.",
+    icon: "fa fa-robot",
+    title: "Chatbot Development",
+    desc: "Creating bots on platforms such as Telegram, Slack, Discord, and WhatsApp, integrating AI tools into these where beneficial. ",
   },
   {
-    icon: "fa fa-gamepad",
-    title: "Game Development",
-    desc: "Developing memorable and unique mobile android, ios and video games.",
+    icon: "fa fa-file-code",
+    title: "Scripting",
+    desc: "Crafting custom scripts in Python and Bash to automate your tasks efficiently and effectively.",
   },
 ];
 
