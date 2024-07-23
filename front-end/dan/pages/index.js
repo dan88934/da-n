@@ -30,7 +30,7 @@ const RecentWorks = dynamic(
 );
 const bio = `<p>
 Hey, I'm Dan! I'm a skilled Full Stack Developer and DevOps Engineer with extensive experience in building and deploying web applications using Python, Go, and JavaScript.
-</p><br><p>You can find examples of my work in my Upwork portfolio and here on my personal website.</p>`;
+</p><br><p>I started coding when I was in university, where my major was Japanese language. I then went on to further develop my skills by creating my own projects and contributing to a large production codebase during my time working for 1Password in a tech support role.</p><br><p> You can find examples of my work in my Upwork portfolio and here on my personal website.</p>`;
 const IndexDark = () => {
   return (
     <Layout bg={"blured"}>

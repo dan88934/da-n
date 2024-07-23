@@ -140,53 +140,43 @@ const RecentWorksDefault = () => {
                     <div className="desc">
                       <div className="post-box">
                         <h1>Heiki</h1>
-                        <div className="blog-detail">XXXXX</div>
                         <div className="blog-content">
-                          <p>
-                            So striking at of to welcomed resolved. Northward by
-                            described up household therefore attention.
-                            Excellence decisively nay man yet impression for
-                            contrasted remarkably.
-                          </p>
-                          <p>
-                            Forfeited you engrossed but gay sometimes explained.
-                            Another as studied it to evident. Merry sense given
-                            he be arise. Conduct at an replied removal an
-                            amongst. Remaining determine few her two cordially
-                            admitting old.
-                          </p>
-                          <blockquote>
-                            Vestibulum ante ipsum primis in faucibus orci luctus
-                            et ultrices posuere cubilia Curae; Pellentesque
-                            suscipit.
-                          </blockquote>
-                          <p>
-                            Tiled say decay spoil now walls meant house. My mr
-                            interest thoughts screened of outweigh removing.
-                            Evening society musical besides inhabit ye my. Lose
-                            hill well up will he over on. Increasing sufficient
-                            everything men him admiration unpleasing sex.
-                          </p>
-                          <ul className="list-style">
-                            <li>Greatest properly off ham exercise all.</li>
+                        <ul className="list-style">
+                            <li>Vocabulary list creation app</li>
                             <li>
-                              Unsatiable invitation its possession nor off.
+                            Completed March 2021
                             </li>
                             <li>
-                              All difficulty estimating unreserved increasing
-                              the solicitude.
+                            Used Python (Flask), HTML, Bootstrap
                             </li>
                           </ul>
                           <p>
-                            Unpleasant astonished an diminution up partiality.
-                            Noisy an their of meant. Death means up civil do an
-                            offer wound of.
+                          Heiki is a flask-based web app which allows users to generate Japanese language vocabulary lists from image(s) or document(s). 
+                          The vocabulary list can be downloaded by the user, and will be in a Word document (.docx) format.
+                          </p>
+                          <p>
+                          I created Heiki by combining various NLP Python packages for OCR and tokenization. I customized the output of the Jamdict package 
+                          (Japanese-to-English dictionary for Python), which is used in this app, to suit my use case.
+                          </p>
+                          <p>
+                          There are some sample images and documents in the sample_files folder in the Github repository which can be used to test the
+                          application manually. Automated tests written using Unittest and Selenium.
                           </p>
                         </div>
-                        <a href="#" className="button">
-                          <span className="text">View Project</span>
-                          <span className="arrow" />
-                        </a>
+                        <div style={{ paddingTop: '20px' }}>
+                          <div style={{ marginBottom: '10px' }}>
+                            <a href="https://heiki.dan.kg/" className="button">
+                              <span className="text">View Project Site</span>
+                              <span className="arrow" />
+                            </a>
+                          </div>
+                          <div>
+                            <a href="https://github.com/dan88934/heiki" className="button">
+                              <span className="text">View Project GitHub</span>
+                              <span className="arrow" />
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -218,53 +208,47 @@ const RecentWorksDefault = () => {
                     <div className="desc">
                       <div className="post-box">
                         <h1>Zenmon</h1>
-                        <div className="blog-detail">Flashcard creation and studying</div>
                         <div className="blog-content">
-                          <p>
-                            So striking at of to welcomed resolved. Northward by
-                            described up household therefore attention.
-                            Excellence decisively nay man yet impression for
-                            contrasted remarkably.
-                          </p>
-                          <p>
-                            Forfeited you engrossed but gay sometimes explained.
-                            Another as studied it to evident. Merry sense given
-                            he be arise. Conduct at an replied removal an
-                            amongst. Remaining determine few her two cordially
-                            admitting old.
-                          </p>
-                          <blockquote>
-                            Vestibulum ante ipsum primis in faucibus orci luctus
-                            et ultrices posuere cubilia Curae; Pellentesque
-                            suscipit.
-                          </blockquote>
-                          <p>
-                            Tiled say decay spoil now walls meant house. My mr
-                            interest thoughts screened of outweigh removing.
-                            Evening society musical besides inhabit ye my. Lose
-                            hill well up will he over on. Increasing sufficient
-                            everything men him admiration unpleasing sex.
-                          </p>
-                          <ul className="list-style">
-                            <li>Greatest properly off ham exercise all.</li>
+                        <ul className="list-style">
+                            <li>Flashcard creation and study app</li>
                             <li>
-                              Unsatiable invitation its possession nor off.
+                            Completed October 2021
                             </li>
                             <li>
-                              All difficulty estimating unreserved increasing
-                              the solicitude.
+                            Used Python (Django), Vue, Bootstrap
                             </li>
                           </ul>
                           <p>
-                            Unpleasant astonished an diminution up partiality.
-                            Noisy an their of meant. Death means up civil do an
-                            offer wound of.
+                          Zenmon is an application which allows users to create Japanese language flashcards. It is different from mainstream flashcard
+                          websites such as Cram and Quizlet in that it allows users to create flashcards with three sides. 
+                          This is particularly useful for people studying Japanese as it allows them to have a side for Hiragana, Kanji and English.
+                          </p>
+                          <p>
+                          The application features a CRUD interface (dashboard app) on which users can create flashcard sets.
+                          It also features an interactive study page with a flippable flashcard (study app).
+                          </p>
+                          <p>
+                            
+                          </p>
+                          <p>
+                          The backend consists of Django with a Postgres DB. The interactive study page is written in Vue JS. 
+                          There are unittests in the dashboard directory.
                           </p>
                         </div>
-                        <a href="#" className="button">
-                          <span className="text">View Project</span>
-                          <span className="arrow" />
-                        </a>
+                        <div style={{ paddingTop: '20px' }}>
+                          <div style={{ marginBottom: '10px' }}>
+                            <a href="https://zenmon.dan.kg/" className="button">
+                              <span className="text">View Project Site</span>
+                              <span className="arrow" />
+                            </a>
+                          </div>
+                          <div>
+                            <a href="https://github.com/dan88934/zenmon" className="button">
+                              <span className="text">View Project GitHub</span>
+                              <span className="arrow" />
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -278,7 +262,7 @@ const RecentWorksDefault = () => {
               </div>
             </div>
           </div>
-          {/* Fernwood Courier Services */}
+          {/* Courier Services */}
           <div className="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
             <div className="box-item">
               <div className="image">
@@ -295,54 +279,43 @@ const RecentWorksDefault = () => {
                     </div>
                     <div className="desc">
                       <div className="post-box">
-                        <h1>Normalcy Web Design</h1>
-                        <div className="blog-detail">Design</div>
+                        <h1>Courier App</h1>
                         <div className="blog-content">
-                          <p>
-                            So striking at of to welcomed resolved. Northward by
-                            described up household therefore attention.
-                            Excellence decisively nay man yet impression for
-                            contrasted remarkably.
-                          </p>
-                          <p>
-                            Forfeited you engrossed but gay sometimes explained.
-                            Another as studied it to evident. Merry sense given
-                            he be arise. Conduct at an replied removal an
-                            amongst. Remaining determine few her two cordially
-                            admitting old.
-                          </p>
-                          <blockquote>
-                            Vestibulum ante ipsum primis in faucibus orci luctus
-                            et ultrices posuere cubilia Curae; Pellentesque
-                            suscipit.
-                          </blockquote>
-                          <p>
-                            Tiled say decay spoil now walls meant house. My mr
-                            interest thoughts screened of outweigh removing.
-                            Evening society musical besides inhabit ye my. Lose
-                            hill well up will he over on. Increasing sufficient
-                            everything men him admiration unpleasing sex.
-                          </p>
-                          <ul className="list-style">
-                            <li>Greatest properly off ham exercise all.</li>
+                        <ul className="list-style">
+                            <li>Takes orders and calculates insurance charges for a fictional courier company</li>
                             <li>
-                              Unsatiable invitation its possession nor off.
+                            Completed November 2021
                             </li>
                             <li>
-                              All difficulty estimating unreserved increasing
-                              the solicitude.
+                            Used Python (Flask), Javascript
                             </li>
                           </ul>
                           <p>
-                            Unpleasant astonished an diminution up partiality.
-                            Noisy an their of meant. Death means up civil do an
-                            offer wound of.
+                            This application receives orders and calculates the cost of insurance for the customers of a fictional courier company.
+                          </p>
+                          <p>
+                          The application allows users to add orders to the database by filling in a form. Users are then given an order reference number. 
+                          They can use this number to search for their order and see details about it on the search page.
+                          </p>
+                          <p>
+                          I completed this small project as part of a coding chalenge. This was my first experience sending a JSON based request to an API.
+                          There are frontend and backend tests included, utilizing Selenium and Unittest. These can be ran from the main directory with 'python -m unittest'.
                           </p>
                         </div>
-                        <a href="#" className="button">
-                          <span className="text">View Project</span>
-                          <span className="arrow" />
-                        </a>
+                        <div style={{ paddingTop: '20px' }}>
+                          <div style={{ marginBottom: '10px' }}>
+                            <a href="https://courier-app.dan.kg/" className="button">
+                              <span className="text">View Project Site</span>
+                              <span className="arrow" />
+                            </a>
+                          </div>
+                          <div>
+                            <a href="https://github.com/dan88934/courier_app" className="button">
+                              <span className="text">View Project GitHub</span>
+                              <span className="arrow" />
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
