@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/gin-contrib/cors"
-	"github.com/gin-contrib/static"
+	// "github.com/gin-contrib/static"
 	"github.com/gin-gonic/gin"
-	"net/http"
+	// "net/http"
 )
 
 
@@ -27,22 +27,17 @@ func main() { //Our router - send a specific route to a function
 	corsConfig.AddAllowMethods("OPTIONS")
 	router.Use(cors.New(corsConfig))
 
-	router.Use(static.Serve("/", static.LocalFile("../front-end/da-n/dist/", true)))
-	router.LoadHTMLGlob("../front-end/da-n/dist/index.html")
+	// Serve static assets from .next/static
+    router.Static("/_next/static", "./.next/static")
 
-	router.GET("/", func(c *gin.Context) {
-		// Call the HTML method of the Context to render a template
-		c.HTML(
-			// Set the HTTP status to 200 (OK)
-			http.StatusOK,
-			// Use the index.html template (SPA)
-			"index.html",
-			// Pass the data that the page uses (in this case, 'title')
-			gin.H{
-				"title": "Home Page - Daniel Hughes",
-			},
-		)
-	})
+    // Serve public static files if you have any
+    router.Static("/public", "./public")
+
+	router.NoRoute(func(c *gin.Context) {
+        // Serve the fallback HTML for client-side routing
+        // This could be an entry point for your Next.js app if applicable
+        c.File("./public/index.html")
+    })
 
 	router.GET("/download-cv", DownloadCV)
 
