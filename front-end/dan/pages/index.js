@@ -58,6 +58,9 @@ const IndexDark = () => {
             <a target="_blank" rel="noreferrer" href="https://github.com/dan88934">
               <span className="fa-brands fa-github" style={{fontSize:'25px'}}/>
             </a>
+            <a target="_blank" rel="noreferrer" href="https://dan176.wordpress.com/">
+              <span className="fa-brands fa-wordpress" style={{fontSize:'25px'}}/>
+            </a>
           </div>
           {/* profile buttons */}
           <div className="lnks">
@@ -65,10 +68,7 @@ const IndexDark = () => {
               <span className="text">Download CV</span>
               <span className="ion ion-ios-cloud-download"></span>
             </a>
-            <a href="#" className="lnk discover">
-              <span className="text">Contact Me</span>
-              <span className="ion ion-paper-airplane"></span>
-            </a>
+            
           </div>
         </div>
       </Home>
