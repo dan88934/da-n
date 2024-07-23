@@ -34,84 +34,15 @@ const RecentWorksDefault = () => {
     <Fragment>
       <div className="content works">
         {/* title */}
-        <div className="title">Recent Works</div>
+        <div className="title">Portfolio</div>
         {/* content */}
-        <div className="row grid-items border-line-v">
-          {/* work item photo */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a href="images/works/work1.jpg" className="has-popup-image">
-                  <img src="images/works/work1.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-image" />
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a
-                  href="images/works/work1.jpg"
-                  className="name has-popup-image"
-                >
-                  ZOSS Clothing Logo
-                </a>
-                <div className="category">Image</div>
-              </div>
-            </div>
-          </div>
-          {/* work item video */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a
-                  href="https://www.youtube.com/embed/mkjwxmcdb0E"
-                  className="has-popup-video"
-                >
-                  <img src="images/works/work2.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-videocamera" />
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a
-                  href="https://www.youtube.com/embed/mkjwxmcdb0E"
-                  className="name has-popup-video"
-                >
-                  NUDE Branding Mockup
-                </a>
-                <div className="category">Video</div>
-              </div>
-            </div>
-          </div>
-          {/* work item music */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a
-                  href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true"
-                  className="has-popup-music"
-                >
-                  <img src="images/works/work3.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-music-note" />
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a href="#" className="name has-popup">
-                  Art Poster Mockup
-                </a>
-                <div className="category">Music</div>
-              </div>
-            </div>
-          </div>
-          {/* work item design */}
+        <div className="row grid-items border-line-v"> 
+          {/* Sakuki */}
           <div className="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
             <div className="box-item">
               <div className="image">
                 <a href="#popup-1" className="has-popup-media">
-                  <img src="images/works/work4.jpg" alt="" />
+                  <img src="images/works/sakuki.png" alt="" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -119,7 +50,248 @@ const RecentWorksDefault = () => {
                 <div id="popup-1" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/works/work4.jpg" alt="" />
+                      <img src="images/works/sakuki.png" alt="" />
+                    </div>
+                    <div className="desc">
+                      <div className="post-box">
+                        <h1>Sakuki</h1>
+                        <div className="blog-content">
+                        <ul className="list-style">
+                            <li>Japanese business translation app</li>
+                            <li>
+                            Completed July 2022
+                            </li>
+                            <li>
+                            Used GO (Gin), Javascript (React), CSS (Styled Components)
+                            </li>
+                          </ul>
+                          <p>
+                          Sakuki is a business Japanese language translator. 
+                          It initially uses Google translate's API to translate the string in question to Japanese. 
+                          It then filters the translation which it receives from the API, removing certain inapropriate words
+                          which Google translate tends to put in translations and replacing those with the appropriate words.
+                          </p>
+                          <p>
+                          <ol>
+                          <li>
+                          I used REGEX to remove the following terms from the translated string: 
+                            </li>
+                          <li>
+                          1. やあ - Produced when Google translate sees "Hi". Replaced with "こんにちは". 
+                            </li>
+                          <li>
+                          2. おい - Produced when Google translate sees "Hey". Replaced with "こんにちは".
+                            </li>
+                          <li>
+                          3. あなた - Produced when Google translate sees "you". Replaced with "お客様".
+                            </li>
+                          </ol>
+                          </p>
+                          <span></span>
+                          <p>
+                          I created a CI and CD workflow for Sakuki with Semaphore. 
+                          There are currently tests for all the main Go functions, these can be found in main_test.go. 
+                          If the code which has been pushed successfully passes the pipeline, then it is pulled to the server 
+                          (Digital Ocean VPS) via Semaphore executing the deploy.sh script on the server.
+                          </p>
+                        </div>
+                        <div style={{ paddingTop: '20px' }}>
+                          <div style={{ marginBottom: '10px' }}>
+                            <a href="https://sakuki.dan.kg/" className="button">
+                              <span className="text">View Project Site</span>
+                              <span className="arrow" />
+                            </a>
+                          </div>
+                          <div>
+                            <a href="https://github.com/dan88934/sakuki" className="button">
+                              <span className="text">View Project GitHub</span>
+                              <span className="arrow" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="desc">
+                <a href="#popup-1" className="name has-popup-media">
+                  Sakuki
+                </a>
+                <div className="category">Japanese language business translator</div>
+              </div>
+            </div>
+          </div>
+          {/* Heiki */}
+          <div className="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div className="box-item">
+              <div className="image">
+                <a href="#popup-1" className="has-popup-media">
+                  <img src="images/works/heiki.png" alt="" />
+                  <span className="info">
+                    <span className="ion ion-images" />
+                  </span>
+                </a>
+                <div id="popup-1" className="popup-box mfp-fade mfp-hide">
+                  <div className="content">
+                    <div className="image">
+                      <img src="images/works/heiki.png" alt="" />
+                    </div>
+                    <div className="desc">
+                      <div className="post-box">
+                        <h1>Heiki</h1>
+                        <div className="blog-detail">XXXXX</div>
+                        <div className="blog-content">
+                          <p>
+                            So striking at of to welcomed resolved. Northward by
+                            described up household therefore attention.
+                            Excellence decisively nay man yet impression for
+                            contrasted remarkably.
+                          </p>
+                          <p>
+                            Forfeited you engrossed but gay sometimes explained.
+                            Another as studied it to evident. Merry sense given
+                            he be arise. Conduct at an replied removal an
+                            amongst. Remaining determine few her two cordially
+                            admitting old.
+                          </p>
+                          <blockquote>
+                            Vestibulum ante ipsum primis in faucibus orci luctus
+                            et ultrices posuere cubilia Curae; Pellentesque
+                            suscipit.
+                          </blockquote>
+                          <p>
+                            Tiled say decay spoil now walls meant house. My mr
+                            interest thoughts screened of outweigh removing.
+                            Evening society musical besides inhabit ye my. Lose
+                            hill well up will he over on. Increasing sufficient
+                            everything men him admiration unpleasing sex.
+                          </p>
+                          <ul className="list-style">
+                            <li>Greatest properly off ham exercise all.</li>
+                            <li>
+                              Unsatiable invitation its possession nor off.
+                            </li>
+                            <li>
+                              All difficulty estimating unreserved increasing
+                              the solicitude.
+                            </li>
+                          </ul>
+                          <p>
+                            Unpleasant astonished an diminution up partiality.
+                            Noisy an their of meant. Death means up civil do an
+                            offer wound of.
+                          </p>
+                        </div>
+                        <a href="#" className="button">
+                          <span className="text">View Project</span>
+                          <span className="arrow" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="desc">
+                <a href="#popup-1" className="name has-popup-media">
+                  Heiki
+                </a>
+                <div className="category">Japanese language vocabulary list creator</div>
+              </div>
+            </div>
+          </div>
+          {/* Zenmon */}
+          <div className="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div className="box-item">
+              <div className="image">
+                <a href="#popup-1" className="has-popup-media">
+                  <img src="images/works/zenmon.png" alt="" />
+                  <span className="info">
+                    <span className="ion ion-images" />
+                  </span>
+                </a>
+                <div id="popup-1" className="popup-box mfp-fade mfp-hide">
+                  <div className="content">
+                    <div className="image">
+                      <img src="images/works/zenmon.png" alt="" />
+                    </div>
+                    <div className="desc">
+                      <div className="post-box">
+                        <h1>Zenmon</h1>
+                        <div className="blog-detail">Flashcard creation and studying</div>
+                        <div className="blog-content">
+                          <p>
+                            So striking at of to welcomed resolved. Northward by
+                            described up household therefore attention.
+                            Excellence decisively nay man yet impression for
+                            contrasted remarkably.
+                          </p>
+                          <p>
+                            Forfeited you engrossed but gay sometimes explained.
+                            Another as studied it to evident. Merry sense given
+                            he be arise. Conduct at an replied removal an
+                            amongst. Remaining determine few her two cordially
+                            admitting old.
+                          </p>
+                          <blockquote>
+                            Vestibulum ante ipsum primis in faucibus orci luctus
+                            et ultrices posuere cubilia Curae; Pellentesque
+                            suscipit.
+                          </blockquote>
+                          <p>
+                            Tiled say decay spoil now walls meant house. My mr
+                            interest thoughts screened of outweigh removing.
+                            Evening society musical besides inhabit ye my. Lose
+                            hill well up will he over on. Increasing sufficient
+                            everything men him admiration unpleasing sex.
+                          </p>
+                          <ul className="list-style">
+                            <li>Greatest properly off ham exercise all.</li>
+                            <li>
+                              Unsatiable invitation its possession nor off.
+                            </li>
+                            <li>
+                              All difficulty estimating unreserved increasing
+                              the solicitude.
+                            </li>
+                          </ul>
+                          <p>
+                            Unpleasant astonished an diminution up partiality.
+                            Noisy an their of meant. Death means up civil do an
+                            offer wound of.
+                          </p>
+                        </div>
+                        <a href="#" className="button">
+                          <span className="text">View Project</span>
+                          <span className="arrow" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="desc">
+                <a href="#popup-1" className="name has-popup-media">
+                  Zenmon
+                </a>
+                <div className="category">Flaskcard creator</div>
+              </div>
+            </div>
+          </div>
+          {/* Fernwood Courier Services */}
+          <div className="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div className="box-item">
+              <div className="image">
+                <a href="#popup-1" className="has-popup-media">
+                  <img src="images/works/courier-services.png" alt="" />
+                  <span className="info">
+                    <span className="ion ion-images" />
+                  </span>
+                </a>
+                <div id="popup-1" className="popup-box mfp-fade mfp-hide">
+                  <div className="content">
+                    <div className="image">
+                      <img src="images/works/courier-services.png" alt="" />
                     </div>
                     <div className="desc">
                       <div className="post-box">
@@ -178,158 +350,9 @@ const RecentWorksDefault = () => {
               </div>
               <div className="desc">
                 <a href="#popup-1" className="name has-popup-media">
-                  Normalcy Web Design
+                  Courier Services
                 </a>
-                <div className="category">Content</div>
-              </div>
-            </div>
-          </div>
-          {/* work item photo */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item gallery border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a href="#gallery-1" className="has-popup-gallery img-gallery">
-                  <img src="images/works/work5.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-images" />
-                  </span>
-                </a>
-                <div id="gallery-1" className="mfp-hide">
-                  <a href="images/works/work5.jpg" />
-                  <a href="images/works/work1.jpg" />
-                  <a href="images/works/work6.jpg" />
-                </div>
-              </div>
-              <div className="desc">
-                <a href="#" className="name has-popup-image">
-                  RETR Style
-                </a>
-                <div className="category">Gallery</div>
-              </div>
-            </div>
-          </div>
-          {/* work item music */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a
-                  href="https://w.soundcloud.com/player/?visual=true&url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&show_artwork=true"
-                  className="has-popup-music"
-                >
-                  <img src="images/works/work7.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-music-note" />
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a href="#" className="name has-popup">
-                  OYYI Mobile App
-                </a>
-                <div className="category">Music</div>
-              </div>
-            </div>
-          </div>
-          {/* work item video */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a
-                  href="https://www.youtube.com/embed/mkjwxmcdb0E"
-                  className="has-popup-video"
-                >
-                  <img src="images/works/work6.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-videocamera" />
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a
-                  href="https://www.youtube.com/embed/mkjwxmcdb0E"
-                  className="name has-popup-video"
-                >
-                  Infinity Logo
-                </a>
-                <div className="category">Video</div>
-              </div>
-            </div>
-          </div>
-          {/* work item design */}
-          <div className="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a href="#popup-2" className="has-popup-media">
-                  <img src="images/works/work8.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-images" />
-                  </span>
-                </a>
-                <div id="popup-2" className="popup-box mfp-fade mfp-hide">
-                  <div className="content">
-                    <div className="image">
-                      <img src="images/works/work8.jpg" alt="" />
-                    </div>
-                    <div className="desc">
-                      <div className="post-box">
-                        <h1>Business Card Design</h1>
-                        <div className="blog-detail">Design</div>
-                        <div className="blog-content">
-                          <p>
-                            So striking at of to welcomed resolved. Northward by
-                            described up household therefore attention.
-                            Excellence decisively nay man yet impression for
-                            contrasted remarkably.
-                          </p>
-                          <p>
-                            Forfeited you engrossed but gay sometimes explained.
-                            Another as studied it to evident. Merry sense given
-                            he be arise. Conduct at an replied removal an
-                            amongst. Remaining determine few her two cordially
-                            admitting old.
-                          </p>
-                          <blockquote>
-                            Vestibulum ante ipsum primis in faucibus orci luctus
-                            et ultrices posuere cubilia Curae; Pellentesque
-                            suscipit.
-                          </blockquote>
-                          <p>
-                            Tiled say decay spoil now walls meant house. My mr
-                            interest thoughts screened of outweigh removing.
-                            Evening society musical besides inhabit ye my. Lose
-                            hill well up will he over on. Increasing sufficient
-                            everything men him admiration unpleasing sex.
-                          </p>
-                          <ul className="list-style">
-                            <li>Greatest properly off ham exercise all.</li>
-                            <li>
-                              Unsatiable invitation its possession nor off.
-                            </li>
-                            <li>
-                              All difficulty estimating unreserved increasing
-                              the solicitude.
-                            </li>
-                          </ul>
-                          <p>
-                            Unpleasant astonished an diminution up partiality.
-                            Noisy an their of meant. Death means up civil do an
-                            offer wound of.
-                          </p>
-                        </div>
-                        <a href="#" className="button">
-                          <span className="text">View Project</span>
-                          <span className="arrow" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="desc">
-                <a href="#popup-2" className="name has-popup-media">
-                  Business Card Design
-                </a>
-                <div className="category">Content</div>
+                <div className="category">Insurance charge calculator</div>
               </div>
             </div>
           </div>
