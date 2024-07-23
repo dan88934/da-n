@@ -9,13 +9,12 @@ import (
 
 
 
-func DownloadCV(c *gin.Context) {
-	c.FileAttachment("./assets/Daniel_Hughes_CV.docx","daniel_hughes_cv.docx")
-	c.Header("Content-Description", "File Transfer")
-    c.Header("Content-Transfer-Encoding", "binary")
-    c.Header("Content-Disposition", "attachment; filename=cv.docx")
-    c.Header("Content-Type", "application/octet-stream")
-
+func DownloadCV(c *gin.Context) { //./assets/Daniel_Hughes_CV.docx
+	filePath := "./assets/Daniel_Hughes_CV.pdf"
+	// Set headers
+	c.Writer.Header().Set("Content-Disposition", "attachment; filename=Daniel_Hughes_CV.pdf")
+	c.Writer.Header().Set("Content-Type", "application/pdf")
+	c.File(filePath)
 }
 
 func main() { //Our router - send a specific route to a function
@@ -41,90 +40,6 @@ func main() { //Our router - send a specific route to a function
 			// Pass the data that the page uses (in this case, 'title')
 			gin.H{
 				"title": "Home Page - Daniel Hughes",
-			},
-		)
-	})
-
-	router.GET("/sakuki", func(c *gin.Context) {
-		// Call the HTML method of the Context to render a template
-		c.HTML(
-			// Set the HTTP status to 200 (OK)
-			http.StatusOK,
-			// Use the index.html template (SPA)
-			"index.html",
-			// Pass the data that the page uses (in this case, 'title')
-			gin.H{
-				"title": "Project - Sakuki",
-			},
-		)
-	})
-
-	router.GET("/zenmon", func(c *gin.Context) {
-		// Call the HTML method of the Context to render a template
-		c.HTML(
-			// Set the HTTP status to 200 (OK)
-			http.StatusOK,
-			// Use the index.html template (SPA)
-			"index.html",
-			// Pass the data that the page uses (in this case, 'title')
-			gin.H{
-				"title": "Project - Zenmon",
-			},
-		)
-	})
-
-	router.GET("/heiki", func(c *gin.Context) {
-		// Call the HTML method of the Context to render a template
-		c.HTML(
-			// Set the HTTP status to 200 (OK)
-			http.StatusOK,
-			// Use the index.html template (SPA)
-			"index.html",
-			// Pass the data that the page uses (in this case, 'title')
-			gin.H{
-				"title": "Project - Heiki",
-			},
-		)
-	})
-
-	router.GET("/danflix", func(c *gin.Context) {
-		// Call the HTML method of the Context to render a template
-		c.HTML(
-			// Set the HTTP status to 200 (OK)
-			http.StatusOK,
-			// Use the index.html template (SPA)
-			"index.html",
-			// Pass the data that the page uses (in this case, 'title')
-			gin.H{
-				"title": "Project - Danflix",
-			},
-		)
-	})
-
-	router.GET("/courier_app", func(c *gin.Context) {
-		// Call the HTML method of the Context to render a template
-		c.HTML(
-			// Set the HTTP status to 200 (OK)
-			http.StatusOK,
-			// Use the index.html template (SPA)
-			"index.html",
-			// Pass the data that the page uses (in this case, 'title')
-			gin.H{
-				"title": "Project - Courier App",
-			},
-		)
-	})
-
-	router.GET("/dan", func(c *gin.Context) {
-		// Call the HTML method of the Context to render a template
-		c.HTML(
-			// Set the HTTP status to 200 (OK)
-			http.StatusOK,
-			// Use the index.html template (SPA)
-			"index.html",
-			// Pass the data that the page uses (in this case, 'title')
-			gin.H{
-				"title": "Project - Da-n",
 			},
 		)
 	})

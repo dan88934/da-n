@@ -64,7 +64,7 @@ const IndexDark = () => {
           </div>
           {/* profile buttons */}
           <div className="lnks">
-            <a href="#" className="lnk">
+            <a href="/download-cv" className="lnk">
               <span className="text">Download CV</span>
               <span className="ion ion-ios-cloud-download"></span>
             </a>
