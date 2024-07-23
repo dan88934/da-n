@@ -29,73 +29,12 @@ const RecentWorksDefault = () => {
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
   }, [filterKey]);
-  const handleFilterKeyChange = (key) => () => {
-    setFilterKey(key);
-  };
-  const activeBtn = (value) => (value === filterKey ? "active" : "");
 
   return (
     <Fragment>
       <div className="content works">
         {/* title */}
         <div className="title">Recent Works</div>
-        {/* filters */}
-        <div className="filter-menu filter-button-group">
-          <div
-            className={`f_btn ${activeBtn("*")}`}
-            onClick={handleFilterKeyChange("*")}
-          >
-            <label>
-              <input type="radio" name="fl_radio" defaultValue="grid-item" />
-              All
-            </label>
-          </div>
-          <div
-            className={`f_btn ${activeBtn("photo")}`}
-            onClick={handleFilterKeyChange("photo")}
-          >
-            <label>
-              <input type="radio" name="fl_radio" defaultValue="photo" />
-              Image
-            </label>
-          </div>
-          <div
-            className={`f_btn ${activeBtn("gallery")}`}
-            onClick={handleFilterKeyChange("gallery")}
-          >
-            <label>
-              <input type="radio" name="fl_radio" defaultValue="gallery" />
-              Gallery
-            </label>
-          </div>
-          <div
-            className={`f_btn ${activeBtn("video")}`}
-            onClick={handleFilterKeyChange("video")}
-          >
-            <label>
-              <input type="radio" name="fl_radio" defaultValue="video" />
-              Video
-            </label>
-          </div>
-          <div
-            className={`f_btn ${activeBtn("music")}`}
-            onClick={handleFilterKeyChange("music")}
-          >
-            <label>
-              <input type="radio" name="fl_radio" defaultValue="music" />
-              Music
-            </label>
-          </div>
-          <div
-            className={`f_btn ${activeBtn("design")}`}
-            onClick={handleFilterKeyChange("design")}
-          >
-            <label>
-              <input type="radio" name="fl_radio" defaultValue="design" />
-              Content
-            </label>
-          </div>
-        </div>
         {/* content */}
         <div className="row grid-items border-line-v">
           {/* work item photo */}
