@@ -1,18 +1,25 @@
-FROM golang:1.18-bullseye
+# Dockerfile
 
-ENV GO111MODULE=on
+# Use an official Node.js runtime as the base image
+FROM node:18-alpine
 
-WORKDIR /da-n
+# Set the working directory in the container
+WORKDIR /app
 
-COPY back-end /back-end
-COPY front-end /front-end
+# Copy package.json and package-lock.json to the container
+COPY front-end/dan/package.json front-end/dan/package-lock.json ./
 
-WORKDIR /back-end
+# Install dependencies
+RUN npm install
 
-RUN go mod download
+# Copy the rest of the application files to the container
+COPY front-end/dan/ .
 
-RUN go build -o app
+# Build the Next.js application for production
+RUN npm run build
 
+# Expose the application port 
 EXPOSE 8000
 
-CMD [ "./app" ]
+# Start the application
+CMD ["npm", "start"]
