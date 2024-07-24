@@ -4,12 +4,12 @@ const data = [
   {
     icon: "fa fa-code",
     title: "Fullstack Development",
-    desc: "Building comprehensive, tailor-made websites that meet your business requirements. Experienced with both front-end (React JS) and back-end (Python and Go) development.",
+    desc: "Creating custom websites and web apps, and enhancing existing projects to meet your business needs.",
   },
   {
     icon: "fa fa-server",
     title: "DevOps / Linux Administration ",
-    desc: "Deploying and maintaining your infrastructure using tools such as Docker, Kubernetes, and NGINX. Experienced with Linux and cloud platforms such as DigitalOcean and AWS.",
+    desc: "Deploying and maintaining your infrastructure on cloud platforms such as DigitalOcean and AWS, or on your own servers.",
   },
   {
     icon: "fa fa-robot",
