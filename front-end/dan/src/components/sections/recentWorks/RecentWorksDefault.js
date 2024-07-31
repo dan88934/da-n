@@ -291,7 +291,7 @@ const RecentWorksDefault = () => {
                             </li>
                           </ul>
                           <p>
-                            This is a redacted and simplified version of a web app that I developed for a client in January 2024.
+                            This is a redacted and simplified version of a logistics web app that I developed for a client in January 2024.
                           </p>
                           <p>
                           This application allows users to add orders to the database by filling in a form. Users are then given an order reference number. 
