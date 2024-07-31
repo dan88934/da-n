@@ -267,7 +267,7 @@ const RecentWorksDefault = () => {
             <div className="box-item">
               <div className="image">
                 <a href="#popup-1" className="has-popup-media">
-                  <img src="images/works/courier-services.png" alt="" />
+                  <img src="images/works/chelford-logistics.png" alt="" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -275,42 +275,46 @@ const RecentWorksDefault = () => {
                 <div id="popup-1" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/works/courier-services.png" alt="" />
+                      <img src="images/works/chelford-logistics.png" alt="" />
                     </div>
                     <div className="desc">
                       <div className="post-box">
-                        <h1>Courier App</h1>
+                        <h1>Chelford Logistics</h1>
                         <div className="blog-content">
                         <ul className="list-style">
-                            <li>Takes orders and calculates insurance charges for a fictional courier company</li>
+                            <li>Logistics company website which takes quote requests and calculates insurance charges</li>
                             <li>
-                            Completed November 2021
+                            Completed January 2024
                             </li>
                             <li>
                             Used Python (Flask), Javascript
                             </li>
                           </ul>
                           <p>
-                            This application receives orders and calculates the cost of insurance for the customers of a fictional courier company.
+                            This is a redacted and simplified version of a web app that I developed for a client in January 2024.
                           </p>
                           <p>
-                          The application allows users to add orders to the database by filling in a form. Users are then given an order reference number. 
-                          They can use this number to search for their order and see details about it on the search page.
+                          This application allows users to add orders to the database by filling in a form. Users are then given an order reference number. 
+                          They can use this number to search for their order and see details about it on the search page. This includes the insurance charge, which is calculated 
+                          on the backend using business logic which was provided to me.
                           </p>
                           <p>
-                          I completed this small project as part of a coding chalenge. This was my first experience sending a JSON based request to an API.
+                          In accordance with my confidentiality agreement with the client, I have changed the name and logo of the company
+                          and removed most of the backend functionality, including the integration with their third party tracking API.
+                          </p>
+                          <p>
                           There are frontend and backend tests included, utilizing Selenium and Unittest. These can be ran from the main directory with 'python -m unittest'.
                           </p>
                         </div>
                         <div style={{ paddingTop: '20px' }}>
                           <div style={{ marginBottom: '10px' }}>
-                            <a href="https://courier-app.dan.kg/" className="button">
+                            <a href="https://chelford-logi.dan.kg/" className="button">
                               <span className="text">View Project Site</span>
                               <span className="arrow" />
                             </a>
                           </div>
                           <div>
-                            <a href="https://github.com/dan88934/courier_app" className="button">
+                            <a href="https://github.com/dan88934/chelford-logistics" className="button">
                               <span className="text">View Project GitHub</span>
                               <span className="arrow" />
                             </a>
@@ -323,9 +327,9 @@ const RecentWorksDefault = () => {
               </div>
               <div className="desc">
                 <a href="#popup-1" className="name has-popup-media">
-                  Courier Services
+                  Chelford Logistics
                 </a>
-                <div className="category">Insurance charge calculator</div>
+                <div className="category">Order submission, status, and insurance charge calculator</div>
               </div>
             </div>
           </div>
