@@ -329,7 +329,7 @@ const RecentWorksDefault = () => {
                 <a href="#popup-1" className="name has-popup-media">
                   Chelford Logistics
                 </a>
-                <div className="category">Order submission, status, and insurance charge calculator</div>
+                <div className="category">Logistics tracking app</div>
               </div>
             </div>
           </div>
