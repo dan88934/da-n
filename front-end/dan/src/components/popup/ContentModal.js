@@ -17,7 +17,9 @@ const Content = ({ content, close }) => {
           <div className="mfp-content" ref={domNode}>
             <div id="popup-2" className="popup-box mfp-fade">
               <div
-                dangerouslySetInnerHTML={{ __html: content.outerHTML }}
+                dangerouslySetInnerHTML={{
+                  __html: content ? content.outerHTML : ''
+                }}
               ></div>
               <button
                 onClick={() => close()}
@@ -46,10 +48,13 @@ const ContentModal = () => {
         const element = popupLink[i];
         element.addEventListener("click", () => {
           setOpen(true);
-          const hidenElement =
-            element.parentElement.getElementsByClassName("mfp-hide")[0];
-          const content_ = hidenElement.getElementsByClassName("content")[0];
-          setContent(content_);
+          const hidenElement = element.parentElement.getElementsByClassName("mfp-hide")[0];
+          if (hidenElement) {
+            const content_ = hidenElement.getElementsByClassName("content")[0];
+            setContent(content_);
+        } else {
+            console.error("Element with class 'mfp-hide' not found");
+        }
         });
       }
     }, 500);
